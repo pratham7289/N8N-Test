@@ -2,7 +2,7 @@ import groovy.json.JsonOutput
 
 pipeline {
     agent any
-    environment as{
+    environment {
         // n8n Webhook URL
         N8N_WEBHOOK_URL = 'http://192.168.48.132:5678/webhook-test/jenkins-discord'
     }
