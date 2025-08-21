@@ -13,7 +13,7 @@ pipeline {
                 echo 'Running build...'
                 // Replace with actual build commands
                 sh 'echo Build success' // simulate success
-                sh 'exit 1'           // simulate failure
+                // sh 'exit 1'           // simulate failure
             }
         }
     }
