@@ -15,7 +15,7 @@ pipeline {
                 echo 'Running build...'
                 // Simulate a build (uncomment one of the following lines to test success or failure)
                 sh 'echo Build success' // Success case
-                // sh 'exit 1' // Failure case (uncomment to test failure)
+                // sh 'exit 1' // Failure case (uncomment to test failure) if needed
             }
         }
     }
