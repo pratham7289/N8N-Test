@@ -15,6 +15,7 @@ pipeline {
             steps {
                 echo 'Running build...'
                 sh 'echo Build success'
+                sh exit
             }
         }
     }
