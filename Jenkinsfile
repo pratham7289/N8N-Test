@@ -24,7 +24,7 @@ pipeline {
                 def buildStatus = currentBuild.currentResult ?: 'UNKNOWN'
                 def message = buildStatus == 'SUCCESS' ?
                     "🚀 Build #${env.BUILD_NUMBER} for '${env.JOB_NAME}' succeeded!" :
-                    "❌ Build #${env.BUILD_NUMBER} for '${env.JOB_NAME}' failed!"
+                    "❌ Build #${env.BUILD_NUMBER} for '${env.JOB_NAME}' failed! Contact DevOps Team"
                 def payload = [
                     job_name    : env.JOB_NAME ?: 'unknown',
                     build_number: env.BUILD_NUMBER ?: '0',
